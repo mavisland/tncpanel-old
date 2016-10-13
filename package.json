@@ -1,0 +1,31 @@
+{
+  "name": "tncpanel",
+  "title": "TNCPanel",
+  "version": "0.0.1",
+  "description": "TNCPanel - a dashboard template based on Bootstrap",
+  "keywords": [
+    "tncpanel",
+    "admin",
+    "dashboard",
+    "template",
+    "theme",
+    "bootstrap",
+    "gulp",
+    "bower",
+    "mordern",
+    "flat"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mavisland/tncpanel.git"
+  },
+  "author": "mavisland",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/mavisland/tncpanel/blob/master/LICENSE"
+  },
+  "bugs": {
+    "url": "https://github.com/mavisland/tncpanel/issues"
+  },
+  "homepage": "https://github.com/mavisland/tncpanel#readme"
+}

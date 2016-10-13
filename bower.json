@@ -1,0 +1,34 @@
+{
+  "name": "tncpanel",
+  "version": "0.0.1",
+  "description": "TNCPanel - a dashboard template based on Bootstrap",
+  "keywords": [
+    "tncpanel",
+    "admin",
+    "dashboard",
+    "template",
+    "theme",
+    "bootstrap",
+    "gulp",
+    "bower",
+    "mordern",
+    "flat"
+  ],
+  "homepage": "https://github.com/mavisland/tncpanel",
+  "authors": [
+    "mavisland"
+  ],
+  "license": "MIT",
+  "main": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3"
+  }
+}

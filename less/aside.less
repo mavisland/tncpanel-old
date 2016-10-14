@@ -1,0 +1,56 @@
+.app-aside {
+    float: left;
+    color: #a6a8b1;
+    background-color: #3a3f51;
+    width: 200px;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        width: inherit;
+        background-color: inherit;
+        border: inherit;
+    }
+}
+
+.sidebar {
+    ul.nav {
+        > li {
+            display: block;
+            position: relative;
+            > a {
+                position: relative;
+                display: block;
+                padding: 10px 20px;
+                font-weight: bold;
+                text-transform: none;
+                .transition(background-color .2s ease-in-out 0s);
+                color: #b4b6bd;
+
+                > i {
+                    position: relative;
+                    float: left;
+                    width: 40px;
+                    margin: -10px -10px;
+                    margin-right: 5px;
+                    overflow: hidden;
+                    line-height: 40px;
+                    text-align: center;
+
+                    &:before {
+                        position: relative;
+                        z-index: 2;
+                    }
+                }
+
+                &:hover,
+                &:focus {
+                    background-color: #32374a;
+                }
+            }
+        }
+    }
+}

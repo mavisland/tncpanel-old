@@ -1,0 +1,88 @@
+<%
+var navigation = [
+    {
+        title: "Dashboard",
+        link: "index.html",
+        icon: "fa-file"
+    },
+    {
+        title: "Tables",
+        link: "tables.html",
+        icon: "fa-table",
+        child: [
+            {
+                title: "Tables #1",
+                link: "#",
+                icon: "fa-table"
+            },
+            {
+                title: "Tables #2",
+                link: "#",
+                icon: "fa-table"
+            },
+            {
+                title: "Tables #3",
+                link: "#",
+                icon: "fa-table"
+            }
+        ]
+    },
+    {
+        title: "Forms",
+        link: "forms.html",
+        icon: "fa-edit"
+    },
+    {
+        title: "Buttons",
+        link: "buttons.html",
+        icon: "fa-check-square-o"
+    },
+    {
+        title: "Typography",
+        link: "typography.html"
+    },
+    {
+        title: "Icons",
+        link: "icons.html"
+    },
+    {
+        title: "Grid System",
+        link: "grid.html"
+    },
+    {
+        title: "Panels",
+        link: "panels.html"
+    },
+    {
+        title: "Login",
+        link: "#"
+    },
+    {
+        title: "Signup",
+        link: "#"
+    },
+    {
+        title: "Blank Page",
+        link: "blank.html"
+    }
+];
+%>
+        <aside id="aside" class="app-aside">
+            <div class="aside-wrapper">
+                <div class="sidebar">
+                    <ul class="nav">
+                        <% for(var i=0; i < navigation.length; i++) { %><li>
+                            <a href="<%= navigation[i].link %>"><% if (typeof navigation[i].icon != 'undefined') { %><i class="fa fa-fw <%= navigation[i].icon %>"></i><% } %> <%= navigation[i].title %> <% if (typeof navigation[i].child != 'undefined') { %><i class="pull-right fa fa-fw fa-angle-left"></i><% } %></a>
+                            <% if (typeof navigation[i].child != 'undefined') { var children = navigation[i].child; %>
+                            <ul class="nav nav-sub">
+                                <% for(var c=0; c < children.length; c++) { %>
+                                <li><a href="<%= children[c].link %>"><%= children[c].title %></a></li>
+                                <% } %>
+                            </ul>
+                            <% } %>
+                        </li>
+                        <% } %>
+                    </ul>
+                </div>
+            </div>
+        </aside> <!-- #aside -->

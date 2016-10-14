@@ -8,13 +8,13 @@ insert_final_newline = true
 
 [*.{less,css}]
 indent_style = space
-indent_size = 2
+indent_size = 4
 
 [*.{html,ejs}]
 indent_style = space
 indent_size = 4
 insert_final_newline = false
 
-[*.js]
+[*.{js,json}]
 indent_style = space
 indent_size = 2

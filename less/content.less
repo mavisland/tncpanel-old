@@ -1,0 +1,31 @@
+.wrapper {
+    padding: 20px;
+}
+
+.app-content {
+    height: 100%;
+    .clearfix();
+
+    @media (min-width: @screen-sm-min) {
+        margin-left: @sidebar-width;
+    }
+}
+
+.app-content-header {
+    background-color: #f6f8f8;
+    border-bottom: 1px solid #dee5e7;
+    padding: 20px;
+
+    > h1 {
+        font-size: @font-size-h3;
+        margin: 0;
+    }
+}
+
+.app-content-wrapper {
+    float: left;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+

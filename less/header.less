@@ -1,0 +1,44 @@
+.app-header {
+    position: fixed;
+    top: 0;
+    z-index: 1025;
+    width: 100%;
+    border-radius: 0;
+
+    &.navbar {
+        margin: 0;
+        border-width: 0;
+        border-radius: 0;
+    }
+
+    .navbar-header {
+        background-color: @navbar-header-bg-color;
+        width: @app-header-width;
+    }
+
+    .navbar-brand {
+        color: @navbar-brand-color;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: unit(@app-header-height / 20px);
+        padding: 0 20px;
+        .text-uppercase();
+
+        &:hover,
+        &:focus {
+            color: @navbar-brand-hover-color;
+        }
+    }
+
+    .navbar-collapse {
+        position: relative;
+        background-color: @navbar-collapse-bg-color;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.05);
+    }
+
+    @media (min-width: @screen-sm-min) {
+        .navbar-collapse {
+            margin-left: @app-header-width;
+        }
+    }
+}

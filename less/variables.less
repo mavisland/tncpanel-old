@@ -1,0 +1,97 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+// Colors
+// -------------------------
+
+@gray-base:             #000;
+@gray-darker:           lighten(@gray-base, 13.5%); // #222
+@gray-dark:             lighten(@gray-base, 20%);   // #333
+@gray:                  lighten(@gray-base, 33.5%); // #555
+@gray-light:            lighten(@gray-base, 46.7%); // #777
+@gray-lighter:          lighten(@gray-base, 93.5%); // #eee
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
+
+
+// Scaffolding
+// -------------------------
+
+@body-bg:               #f0f3f4;
+@text-color:            #343131;
+@link-color:            @brand-primary;
+@link-hover-color:      darken(@link-color, 15%);
+@link-hover-decoration: none;
+
+
+// Typography
+// -------------------------
+
+@font-family-base:       "Roboto", Helvetica, Arial, sans-serif;;
+@font-size-base:         14px;
+@font-size-large:        ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:        ceil((@font-size-base * 0.85)); // ~12px
+@font-size-h1:           floor((@font-size-base * 2.6)); // ~36px
+@font-size-h2:           floor((@font-size-base * 2.15)); // ~30px
+@font-size-h3:           ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h4:           ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:           @font-size-base;
+@font-size-h6:           ceil((@font-size-base * 0.85)); // ~12px
+@line-height-base:       1.428571429; // 20/14
+@line-height-computed:   floor((@font-size-base * @line-height-base)); // ~20px
+@headings-font-family:   inherit;
+@headings-font-weight:   500;
+@headings-line-height:   1.1;
+@headings-color:         inherit;
+@headings-small-color:   @gray-light;
+
+
+// Media queries breakpoints
+// -------------------------
+
+// Extra small screen / phone
+@screen-xs:       480px;
+@screen-xs-min:   @screen-xs;
+// Small screen / tablet
+@screen-sm:       768px;
+@screen-sm-min:   @screen-sm;
+// Medium screen / desktop
+@screen-md:       992px;
+@screen-md-min:   @screen-md;
+// Large screen / wide desktop
+@screen-lg:       1200px;
+@screen-lg-min:   @screen-lg;
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:   (@screen-sm-min - 1);
+@screen-sm-max:   (@screen-md-min - 1);
+@screen-md-max:   (@screen-lg-min - 1);
+
+
+// Header
+// -------------------------
+
+@app-header-height:          50px;
+@app-header-width:           200px;
+@navbar-header-bg-color:     #3a3f51;
+@navbar-brand-color:         #eaebed;
+@navbar-brand-hover-color:   #fff;
+@navbar-collapse-bg-color:   #fff;
+
+
+// Sidebar
+// -------------------------
+
+@sidebar-bg-color:     #3a3f51;
+@sidebar-text-color:   #a6a8b1;
+@sidebar-width:        @app-header-width;
+
+
+// Footer
+// -------------------------
+@app-footer-height:   @app-header-height;
+@app-footer-width:    @app-header-width;

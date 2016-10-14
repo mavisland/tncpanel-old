@@ -2,6 +2,24 @@
 var pageTitle = "Tables";
 var pageID    = "tables";
 var pageClass = "tables";
+
+var users = [
+    {
+        first: "Mark",
+        last: "Otto",
+        username: "@mdo"
+    },
+    {
+        first: "Jacob",
+        last: "Thornton",
+        username: "@fat"
+    },
+    {
+        first: "Larry",
+        last: "the Bird",
+        username: "@twitter"
+    }
+]
 %>
 <% include _header %>
 <% include _sidebar %>
@@ -9,9 +27,256 @@ var pageClass = "tables";
             <div class="app-content-header">
                 <h1><%= pageTitle %></h1>
             </div>
-            <div class="app-content-wrapper">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum necessitatibus ab id tenetur molestias voluptatum cumque consequatur aliquid repellendus pariatur. Vel suscipit veritatis architecto sed odit esse ab quo deleniti.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolorem, esse hic, ex tenetur accusantium iure illo, minus nam cupiditate molestiae dolorum eveniet! Cupiditate aperiam illum reprehenderit neque vitae debitis.</p>
+            <div class="wrapper clearfix">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Basic Table</h3>
+                            </div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Username</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% for (var ibt=0; ibt < users.length; ibt++) { %>
+                                    <tr>
+                                        <th scope="row"><%= ibt+1 %></th>
+                                        <td><%= users[ibt].first %></td>
+                                        <td><%= users[ibt].last %></td>
+                                        <td><%= users[ibt].username %></td>
+                                    </tr>
+                                    <% } %>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Striped Rows</h3>
+                            </div>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Username</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% for (var isr=0; isr < users.length; isr++) { %>
+                                    <tr>
+                                        <th scope="row"><%= isr+1 %></th>
+                                        <td><%= users[isr].first %></td>
+                                        <td><%= users[isr].last %></td>
+                                        <td><%= users[isr].username %></td>
+                                    </tr>
+                                    <% } %>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Bordered Table</h3>
+                            </div>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Username</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% for (var ibo=0; ibo < users.length; ibo++) { %>
+                                    <tr>
+                                        <th scope="row"><%= ibo+1 %></th>
+                                        <td><%= users[ibo].first %></td>
+                                        <td><%= users[ibo].last %></td>
+                                        <td><%= users[ibo].username %></td>
+                                    </tr>
+                                    <% } %>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Hover Rows</h3>
+                            </div>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Username</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% for (var ihr=0; ihr < users.length; ihr++) { %>
+                                    <tr>
+                                        <th scope="row"><%= ihr+1 %></th>
+                                        <td><%= users[ihr].first %></td>
+                                        <td><%= users[ihr].last %></td>
+                                        <td><%= users[ihr].username %></td>
+                                    </tr>
+                                    <% } %>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Contextual Classes</h3>
+                            </div>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>State</th>
+                                        <th>Column heading</th>
+                                        <th>Column heading</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="active">
+                                        <th scope="row">1</th>
+                                        <td>Active</td>
+                                        <td>Column content</td>
+                                        <td>Column content</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Empty</td>
+                                        <td>Column content</td>
+                                        <td>Column content</td>
+                                    </tr>
+                                    <tr class="success">
+                                        <th scope="row">3</th>
+                                        <td>Success</td>
+                                        <td>Column content</td>
+                                        <td>Column content</td>
+                                    </tr>
+                                    <tr class="info">
+                                        <th scope="row">4</th>
+                                        <td>Info</td>
+                                        <td>Column content</td>
+                                        <td>Column content</td>
+                                    </tr>
+                                    <tr class="warning">
+                                        <th scope="row">5</th>
+                                        <td>Warning</td>
+                                        <td>Column content</td>
+                                        <td>Column content</td>
+                                    </tr>
+                                    <tr class="danger">
+                                        <th scope="row">6</th>
+                                        <td>Danger</td>
+                                        <td>Column content</td>
+                                        <td>Column content</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Condensed Table</h3>
+                            </div>
+                            <table class="table table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Username</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% for (var ict=0; ict < users.length; ict++) { %>
+                                    <tr>
+                                        <th scope="row"><%= ict+1 %></th>
+                                        <td><%= users[ict].first %></td>
+                                        <td><%= users[ict].last %></td>
+                                        <td><%= users[ict].username %></td>
+                                    </tr>
+                                    <% } %>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Responsive Tables</h3>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Table heading</th>
+                                            <th>Table heading</th>
+                                            <th>Table heading</th>
+                                            <th>Table heading</th>
+                                            <th>Table heading</th>
+                                            <th>Table heading</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                            <td>Table cell</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div> <!-- #content -->
 <% include _footer %>

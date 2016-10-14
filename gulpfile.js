@@ -7,24 +7,26 @@
 
 'use strict';
 
-var gulp = require('gulp');
-var gutil = require('gulp-util');
-var pkg = require('./package.json');
-var filesys = require('fs');
-var header = require('gulp-header');
-var rename = require("gulp-rename");
-var clean = require("gulp-clean");
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var less = require('gulp-less');
-var cleanCSS = require('gulp-clean-css');
-var ejs = require("gulp-ejs");
+var gulp        = require('gulp');
+var gutil       = require('gulp-util');
+var pkg         = require('./package.json');
+var filesys     = require('fs');
+var header      = require('gulp-header');
+var rename      = require("gulp-rename");
+var clean       = require("gulp-clean");
+var concat      = require('gulp-concat');
+var uglify      = require('gulp-uglify');
+var less        = require('gulp-less');
+var cleanCSS    = require('gulp-clean-css');
+var ejs         = require("gulp-ejs");
 var browserSync = require('browser-sync').create();
 
 // Set the banner content
 var banner = ['/*!\n',
-  ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-  ' * Copyright 2013-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
+  ' * <%= pkg.title %> <%= pkg.version %> by @<%= pkg.author.username %> (<%= pkg.homepage %>)\n',
+  ' * <%= pkg.description %>\n',
+  ' *\n',
+  ' * Copyright (c) ' + (new Date()).getFullYear(), ' <%= pkg.author.fullname %> <<%= pkg.author.email %>> (<%= pkg.author.homepage %>)\n',
   ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n',
   ' */\n',
   ''

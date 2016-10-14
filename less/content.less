@@ -6,6 +6,12 @@
     height: 100%;
     .clearfix();
 
+    > .wrapper {
+        padding-bottom: @app-header-height;
+        float: left;
+        width: 100%;
+    }
+
     @media (min-width: @screen-sm-min) {
         margin-left: @sidebar-width;
     }

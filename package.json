@@ -1,8 +1,8 @@
 {
   "name": "tncpanel",
   "title": "TNCPanel",
-  "version": "0.0.1",
-  "description": "TNCPanel - a dashboard template based on Bootstrap",
+  "version": "0.0.2",
+  "description": "A dashboard template based on Twitter Bootstrap",
   "keywords": [
     "tncpanel",
     "admin",
@@ -19,15 +19,20 @@
     "type": "git",
     "url": "git+https://github.com/mavisland/tncpanel.git"
   },
-  "author": "mavisland",
+  "author": {
+    "username": "mavisland",
+    "fullname": "Tanju Yıldız",
+    "email": "ben@tanjuyildiz.com",
+    "homepage": "http://tanjuyildiz.com"
+  },
   "license": {
-    "type": "MIT",
+    "type": "MIT License",
     "url": "https://github.com/mavisland/tncpanel/blob/master/LICENSE"
   },
   "bugs": {
     "url": "https://github.com/mavisland/tncpanel/issues"
   },
-  "homepage": "https://github.com/mavisland/tncpanel#readme",
+  "homepage": "https://github.com/mavisland/tncpanel",
   "devDependencies": {
     "browser-sync": "^2.17.3",
     "gulp": "^3.9.1",

@@ -1,8 +1,8 @@
 .app-aside {
     float: left;
-    color: #a6a8b1;
-    background-color: #3a3f51;
-    width: 200px;
+    color: @sidebar-text-color;
+    background-color: @sidebar-bg-color;
+    width: @sidebar-width;
 
     &:before {
         content: "";
@@ -17,16 +17,14 @@
 }
 
 .sidebar {
-    ul.nav {
+    .nav {
         > li {
             display: block;
             position: relative;
+
             > a {
-                position: relative;
-                display: block;
                 padding: 10px 20px;
-                font-weight: bold;
-                text-transform: none;
+                font-weight: 500;
                 .transition(background-color .2s ease-in-out 0s);
                 color: #b4b6bd;
 

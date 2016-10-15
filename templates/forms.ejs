@@ -9,9 +9,304 @@ var pageClass = "forms";
             <div class="app-content-header">
                 <h1><%= pageTitle %></h1>
             </div>
-            <div class="app-content-wrapper">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum necessitatibus ab id tenetur molestias voluptatum cumque consequatur aliquid repellendus pariatur. Vel suscipit veritatis architecto sed odit esse ab quo deleniti.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolorem, esse hic, ex tenetur accusantium iure illo, minus nam cupiditate molestiae dolorum eveniet! Cupiditate aperiam illum reprehenderit neque vitae debitis.</p>
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">Basic Form</h2>
+                                <small>Individual form controls automatically receive some global styling. All textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with <code>.form-control</code> are set to <code>width: 100%;</code> by default. Wrap labels and controls in <code>.form-group</code> for optimum spacing.</small>
+                            </div>
+                            <div class="panel-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Check me out
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-default">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">Horizontal Form</h2>
+                                <small>Use Bootstrap's predefined grid classes to align labels and groups of form controls in a horizontal layout by adding <code>.form-horizontal</code> to the form (which doesn't have to be a <code>&lt;form&gt;</code>). Doing so changes <code>.form-group</code>s to behave as grid rows, so no need for <code>.row</code>.</small>
+                            </div>
+                            <div class="panel-body">
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                            <p class="help-block">Example block-level help text here.</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"> Remember me
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <button type="submit" class="btn btn-default">Sign in</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Inline Form</h3>
+                                <small>Add <code>.form-inline</code> to your form (which doesn't have to be a <code>&lt;form&gt;</code>) for left-aligned and inline-block controls. <strong>This only applies to forms within viewports that are at least 768px wide.</strong></small>
+                            </div>
+                            <div class="panel-body">
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <label for="exampleInputName2">Name</label>
+                                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail2">Email</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Remember me
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-default">Send invitation</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">Basic Form Elements</h2>
+                            </div>
+                            <div class="panel-body">
+                                <form role="form">
+                                    <div class="form-group">
+                                        <label>Text Input</label>
+                                        <input class="form-control">
+                                        <p class="help-block">Example block-level help text here.</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Text Input with Placeholder</label>
+                                        <input class="form-control" placeholder="Enter text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Static Control</label>
+                                        <p class="form-control-static">email@example.com</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>File input</label>
+                                        <input type="file">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Text area</label>
+                                        <textarea class="form-control" rows="3"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Checkboxes</label>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">Checkbox 1
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">Checkbox 2
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">Checkbox 3
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Inline Checkboxes</label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox">1
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox">2
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox">3
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Radio Buttons</label>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">Radio 1
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Radio 2
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">Radio 3
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Inline Radio Buttons</label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked="">1
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">2
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline3" value="option3">3
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Selects</label>
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Multiple Selects</label>
+                                        <select multiple="" class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn btn-default">Submit Button</button>
+                                    <button type="reset" class="btn btn-default">Reset Button</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">Disabled State</h2>
+                                <small>Add the <code>disabled</code> boolean attribute on an input to prevent user interactions. Disabled inputs appear lighter and add a <code>not-allowed</code> cursor.</small>
+                            </div>
+                            <div class="panel-body">
+                                <form role="form">
+                                    <fieldset disabled="">
+                                        <div class="form-group">
+                                            <label for="disabledSelect">Disabled input</label>
+                                            <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input" disabled="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="disabledSelect">Disabled select menu</label>
+                                            <select id="disabledSelect" class="form-control">
+                                                <option>Disabled select</option>
+                                            </select>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Disabled Checkbox
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Disabled Button</button>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">Validation States</h2>
+                                <small>Bootstrap includes validation styles for error, warning, and success states on form controls. To use, add <code>.has-warning</code>, <code>.has-error</code>, or <code>.has-success</code> to the parent element. Any <code>.control-label</code>, <code>.form-control</code>, and <code>.help-block</code> within that element will receive the validation styles.</small>
+                            </div>
+                            <div class="panel-body">
+                                <form role="form">
+                                    <div class="form-group has-success">
+                                        <label class="control-label" for="inputSuccess">Input with success</label>
+                                        <input type="text" class="form-control" id="inputSuccess">
+                                    </div>
+                                    <div class="form-group has-warning">
+                                        <label class="control-label" for="inputWarning">Input with warning</label>
+                                        <input type="text" class="form-control" id="inputWarning">
+                                    </div>
+                                    <div class="form-group has-error">
+                                        <label class="control-label" for="inputError">Input with error</label>
+                                        <input type="text" class="form-control" id="inputError">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">Input Groups</h2>
+                            </div>
+                            <div class="panel-body">
+                                <form role="form">
+                                    <div class="form-group input-group">
+                                        <span class="input-group-addon">@</span>
+                                        <input type="text" class="form-control" placeholder="Username">
+                                    </div>
+                                    <div class="form-group input-group">
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-addon">.00</span>
+                                    </div>
+                                    <div class="form-group input-group">
+                                        <span class="input-group-addon"><i class="fa fa-eur"></i>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Font Awesome Icon">
+                                    </div>
+                                    <div class="form-group input-group">
+                                        <span class="input-group-addon">$</span>
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-addon">.00</span>
+                                    </div>
+                                    <div class="form-group input-group">
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="button"><i class="fa fa-search"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div> <!-- #content -->
 <% include _footer %>

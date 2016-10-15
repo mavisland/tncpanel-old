@@ -1,3 +1,7 @@
+//
+// Sidebar
+// --------------------------------------------------
+
 .app-aside {
     float: left;
     color: @sidebar-text-color;
@@ -37,7 +41,6 @@
 
             > a {
                 background-color: @sidenav-link-bg-color;
-                // box-shadow: 0 1px 0 #444;
                 color: @sidenav-link-color;
 
                 * {
@@ -83,20 +86,16 @@
         }
 
         // Active state
-        > .active {
-            > a {
-                &,
-                &:hover,
-                &:focus {
-                    background-color: @sidenav-link-active-bg-color;
-                    color: @sidenav-link-active-color;
-                }
+        > .active > a {
+            &,
+            &:hover,
+            &:focus {
+                background-color: @sidenav-link-active-bg-color;
+                color: @sidenav-link-active-color;
+            }
 
-                .nav-caret {
-                    i {
-                        .rotate(180deg);
-                    }
-                }
+            .nav-caret i {
+                .rotate(180deg);
             }
         }
 
@@ -120,7 +119,6 @@
             font-size: @font-size-small;
 
             > a {
-                // box-shadow: 0 1px 0 rgba(255,255,255,.035);
                 .pad-tb(6px);
             }
         }

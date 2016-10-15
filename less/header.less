@@ -16,6 +16,7 @@
         width: @app-header-width;
     }
 
+    // Brand
     .navbar-brand {
         color: @navbar-brand-color;
         font-size: 20px;
@@ -33,12 +34,90 @@
     .navbar-collapse {
         position: relative;
         background-color: @navbar-collapse-bg-color;
-        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.05);
+    }
+
+    // Menu
+    .navbar-nav {
+        > li {
+            border-right: 1px solid @navbar-nav-border-color;
+
+            > a {
+                background-color: @navbar-nav-link-bg;
+                color: @navbar-nav-link-color;
+
+                &:hover,
+                &:focus {
+                    background-color: @navbar-nav-hover-bg;
+                    color: @navbar-nav-hover-color;
+                }
+            }
+        }
+
+        > .active > a {
+            background-color: @navbar-nav-active-bg;
+            color: @navbar-nav-active-color;
+        }
+
+        &.navbar-right {
+            > li {
+                border-right: 0;
+                border-left: 1px solid @navbar-nav-border-color;
+            }
+        }
+    }
+
+    // Profile
+    .profile {
+        > a {
+            .pad-tb(10px);
+
+            .avatar {
+                height: 30px;
+                width: 30px;
+            }
+        }
+    }
+
+    // Search Form
+    .search {
+        .form-control,
+        .btn {
+            background-color: #333;
+            border: 1px solid #444;
+            border-radius: 0;
+            color: #ccc;
+        }
+
+
+        .form-control {
+            color: #999;
+
+            &:focus {
+                border-color: #444;
+                .box-shadow(none);
+            }
+        }
+
+        .btn {
+            color: #ccc;
+
+            &:hover,
+            &:focus {
+                background-color: @navbar-collapse-bg-color;
+                color: #fff;
+            }
+        }
     }
 
     @media (min-width: @screen-sm-min) {
         .navbar-collapse {
             margin-left: @app-header-width;
         }
+
+        // .navbar-nav {
+        //     > li > a {
+        //         .pad-tb(10px);
+        //     }
+        // }
     }
 }

@@ -8,40 +8,40 @@
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: @headings-font-family;
-  font-weight: @headings-font-weight;
-  line-height: @headings-line-height;
-  color: @headings-color;
+    font-family: @headings-font-family;
+    font-weight: @headings-font-weight;
+    line-height: @headings-line-height;
+    color: @headings-color;
 
-  small,
-  .small {
-    font-weight: normal;
-    line-height: 1;
-    color: @headings-small-color;
-  }
+    small,
+    .small {
+        font-weight: normal;
+        line-height: 1;
+        color: @headings-small-color;
+    }
 }
 
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-top: @line-height-computed;
-  margin-bottom: (@line-height-computed / 2);
+    margin-top: @line-height-computed;
+    margin-bottom: (@line-height-computed / 2);
 
-  small,
-  .small {
-    font-size: 65%;
-  }
+    small,
+    .small {
+        font-size: 65%;
+    }
 }
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: (@line-height-computed / 2);
-  margin-bottom: (@line-height-computed / 2);
+    margin-top: (@line-height-computed / 2);
+    margin-bottom: (@line-height-computed / 2);
 
-  small,
-  .small {
-    font-size: 75%;
-  }
+    small,
+    .small {
+        font-size: 75%;
+    }
 }
 
 h1, .h1 { font-size: @font-size-h1; }
@@ -56,7 +56,7 @@ h6, .h6 { font-size: @font-size-h6; }
 // -------------------------
 
 p {
-  margin: 0 0 (@line-height-computed / 2);
+    margin: 0 0 (@line-height-computed / 2);
 }
 
 // Emphasis & misc
@@ -64,7 +64,7 @@ p {
 
 small,
 .small {
-  font-size: floor((100% * @font-size-small / @font-size-base));
+    font-size: floor((100% * @font-size-small / @font-size-base));
 }
 
 // Alignment
@@ -78,10 +78,3 @@ small,
 .text-lowercase      { text-transform: lowercase; }
 .text-uppercase      { text-transform: uppercase; }
 .text-capitalize     { text-transform: capitalize; }
-
-
-// Page header
-// -------------------------
-
-.page-header {
-}

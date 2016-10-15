@@ -22,7 +22,7 @@
 // Scaffolding
 // -------------------------
 
-@body-bg:               #f0f3f4;
+@body-bg:               #fff; //#f0f3f4;
 @text-color:            #343131;
 @link-color:            @brand-primary;
 @link-hover-color:      darken(@link-color, 15%);
@@ -80,22 +80,45 @@
 // -------------------------
 
 @app-header-height:          50px;
-@app-header-width:           200px;
-@navbar-header-bg-color:     #f05050;
+@app-header-width:           240px;
+@navbar-header-bg-color:     #ea6a09; //#f05050;
 @navbar-brand-color:         #fff;
 @navbar-brand-hover-color:   #fff;
-@navbar-collapse-bg-color:   #fff;
+@navbar-collapse-bg-color:   #222; //#fff;
+
+@navbar-nav-border-color:    rgba(255,255,255,0.1);
+@navbar-nav-link-color:      #ccc;
+@navbar-nav-link-bg:         transparent;
+@navbar-nav-hover-color:     #fff;
+@navbar-nav-hover-bg:        #333;
+@navbar-nav-active-color:    #fff;
+@navbar-nav-active-bg:       transparent;
 
 
 // Sidebar
 // -------------------------
 
-@sidebar-bg-color:     #3a3f51;
-@sidebar-text-color:   #a6a8b1;
-@sidebar-width:        @app-header-width;
+@sidebar-bg-color:               #333333; //#3a3f51;
+@sidebar-text-color:             #a6a8b1;
+@sidebar-width:                  @app-header-width;
+@sidenav-bg-color:               transparent;
+@sidenav-header-bg-color:        transparent;
+@sidenav-header-text-color:      #777;
+@sidenav-link-bg-color:          transparent;
+@sidenav-link-color:             #ccc;
+@sidenav-link-active-bg-color:   #444;
+@sidenav-link-active-color:      #fff;
+@sidenav-link-hover-bg-color:    transparent;
+@sidenav-link-hover-color:       @navbar-header-bg-color;
+@sidenav-sub-bg-color:           transparent;
+@sidenav-sub-link-color:         #ccc;
+@sidenav-sub-link-hover-color:   @navbar-header-bg-color;
 
 
 // Footer
 // -------------------------
-@app-footer-height:   @app-header-height;
-@app-footer-width:    @app-header-width;
+@app-footer-bg-color:       #f2f2f2;
+@app-footer-border-color:   #ddd;
+@app-footer-text-color:     @text-color;
+@app-footer-height:         @app-header-height;
+@app-footer-width:          @app-header-width;

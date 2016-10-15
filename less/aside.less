@@ -18,37 +18,115 @@
 
 .sidebar {
     .nav {
+        // Header
+        > .header {
+            background-color: @sidenav-header-bg-color;
+            color: @sidenav-header-text-color;
+            font-size: 12px;
+            .text-uppercase();
+            margin-top: 10px;
+            padding: 8px 25px 8px 15px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        // Item
         > li {
-            display: block;
             position: relative;
+            display: block;
 
             > a {
-                padding: 10px 20px;
-                font-weight: 500;
-                .transition(background-color .2s ease-in-out 0s);
-                color: #b4b6bd;
+                background-color: @sidenav-link-bg-color;
+                // box-shadow: 0 1px 0 #444;
+                color: @sidenav-link-color;
 
-                > i {
+                * {
                     position: relative;
+                }
+
+                .nav-caret {
+                    float: right;
+                    margin-left: 1rem;
+                    opacity: .45;
+
+                     i {
+                        .transition(transform .2s ease-in-out);
+                     }
+                }
+
+                .nav-icon {
                     float: left;
-                    width: 40px;
-                    margin: -10px -10px;
+                    width: 20px;
                     margin-right: 5px;
                     overflow: hidden;
-                    line-height: 40px;
-                    text-align: center;
+                    .text-center();
+                }
 
-                    &:before {
-                        position: relative;
-                        z-index: 2;
-                    }
+                .nav-text {
+                    font-weight: 300;
                 }
 
                 &:hover,
                 &:focus {
-                    background-color: #32374a;
+                    background-color: @sidenav-link-hover-bg-color;
+                    color: @sidenav-link-hover-color;
+                }
+
+                &,
+                &:hover,
+                &:focus {
+                    .nav-caret {
+                        color: @sidenav-link-color;
+                    }
                 }
             }
+        }
+
+        // Active state
+        > .active {
+            > a {
+                &,
+                &:hover,
+                &:focus {
+                    background-color: @sidenav-link-active-bg-color;
+                    color: @sidenav-link-active-color;
+                }
+
+                .nav-caret {
+                    i {
+                        .rotate(180deg);
+                    }
+                }
+            }
+        }
+
+        // Divider
+        > .divider {
+            background-color: @navbar-collapse-bg-color;
+            width: 100%;
+            height: 2px;
+            margin: 10px 0;
+            overflow: hidden;
+            font-size: 0;
+        }
+    }
+
+    // Sub-menu
+    .nav-sub {
+        background-color: @navbar-collapse-bg-color;
+        display: none;
+
+        > li {
+            font-size: @font-size-small;
+
+            > a {
+                // box-shadow: 0 1px 0 rgba(255,255,255,.035);
+                .pad-tb(6px);
+            }
+        }
+
+        .nav-sub {
+            padding-left: 10px;
         }
     }
 }

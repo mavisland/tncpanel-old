@@ -33,6 +33,9 @@
     "url": "https://github.com/mavisland/tncpanel/issues"
   },
   "homepage": "https://github.com/mavisland/tncpanel",
+  "scripts": {
+    "deploy": "git subtree push --prefix dist origin gh-pages"
+  },
   "devDependencies": {
     "browser-sync": "^2.17.3",
     "gulp": "^3.9.1",

@@ -9,12 +9,10 @@
 
 .app-content {
     height: 100%;
-    .clearfix();
 
-    > .wrapper {
-        padding-bottom: @app-header-height;
-        float: left;
-        width: 100%;
+    &,
+    .content-wrapper {
+        .clearfix();
     }
 
     @media (min-width: @screen-sm-min) {
@@ -22,19 +20,35 @@
     }
 }
 
-.app-content-header {
-    background-color: #f2f2f2;
+.content-header {
+    background-color: #fff;
     border-bottom: 1px solid #ddd;
     padding: 20px;
+    float: left;
+    width: 100%;
 
-    > h1 {
+    .page-title {
         font-size: @font-size-h3;
         margin: 0;
     }
+
+    .breadcrumb {
+        background-color: transparent;
+        border-radius: 0;
+        padding: 5px 0 0;
+        margin: 0;
+    }
+
+    @media (min-width: @screen-sm-min) {
+        .breadcrumb {
+            .text-right();
+        }
+    }
 }
 
-.app-content-wrapper {
+.content-wrapper {
     float: left;
     width: 100%;
-    padding-bottom: 50px;
+    padding: 20px;
+    padding-bottom: @app-header-height;
 }

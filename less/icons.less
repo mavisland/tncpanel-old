@@ -1,0 +1,38 @@
+//
+// Icons
+// --------------------------------------------------
+
+/** Demo Only */
+.icon-list-demo {
+    > div {
+        cursor: pointer;
+        line-height: 45px;
+        white-space: nowrap;
+        color: @text-color;
+
+        border-radius: 4px;
+        background-clip: padding-box;
+
+        &:hover {
+            background-color: @brand-primary;
+            color: #fff;
+
+            .fa,
+            .glyphicon {
+                .scale(2);
+            }
+        }
+    }
+
+    .fa,
+    .glyphicon {
+        -webkit-transition: all 0.2s;
+        display: inline-block;
+        font-size: 16px;
+        margin: 0;
+        text-align: center;
+        transition: all 0.2s;
+        vertical-align: middle;
+        width: 40px;
+    }
+}

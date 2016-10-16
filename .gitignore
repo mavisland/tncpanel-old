@@ -10,6 +10,3 @@ bower_components
 
 # Ignore WebStorm project files
 /.idea
-
-# Ignore distribution files
-/dist

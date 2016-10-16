@@ -2,13 +2,91 @@
 var navigation = [
     {
         type: "header",
-        title: "Main Navigation"
+        title: "Navigation"
     },
     {
         class: "dashboard",
         title: "Dashboard",
         link: "index.html",
         icon: "fa-dashboard"
+    },
+    {
+        title: "UI Elements",
+        link: "#",
+        icon: "fa-paint-brush",
+        child: [
+            {
+                title: "Buttons",
+                link: "buttons.html",
+                icon: "fa-check-square-o"
+            },
+            {
+                title: "Grid System",
+                link: "grid.html",
+                icon: "fa-th"
+            },
+            {
+                title: "Panels",
+                link: "panels.html",
+                icon: "fa-columns"
+            },
+            {
+                title: "Typography",
+                link: "typography.html",
+                icon: "fa-font"
+            },
+        ]
+    },
+    {
+        title: "Icons",
+        link: "icons.html",
+        icon: "fa-diamond",
+        child: [
+            {
+                title: "Font Awesome",
+                link: "icons-fa.html"
+            },
+            {
+                title: "Glyphicons",
+                link: "icons-glyphicons.html"
+            },
+        ]
+    },
+    {
+        title: "Forms",
+        link: "forms.html",
+        icon: "fa-edit"
+    },
+    {
+        title: "Tables",
+        link: "tables.html",
+        icon: "fa-list-alt",
+    },
+    {
+        type: "divider",
+    },
+    {
+        type: "header",
+        title: "More"
+    },
+    {
+        title: "Pages",
+        link: "#",
+        icon: "fa-file-o",
+        child: [
+            {
+                title: "Login",
+                link: "#"
+            },
+            {
+                title: "Signup",
+                link: "#"
+            },
+            {
+                title: "Blank Page",
+                link: "blank.html"
+            },
+        ]
     },
     {
         title: "Multi-level Dropdown",
@@ -39,63 +117,6 @@ var navigation = [
             }
         ]
     },
-    {
-        type: "divider",
-    },
-    {
-        type: "header",
-        title: "Components"
-    },
-    {
-        title: "Tables",
-        link: "tables.html",
-        icon: "fa-table",
-    },
-    {
-        title: "Forms",
-        link: "forms.html",
-        icon: "fa-edit"
-    },
-    {
-        title: "Buttons",
-        link: "buttons.html",
-        icon: "fa-check-square-o"
-    },
-    {
-        title: "Typography",
-        link: "typography.html"
-    },
-    {
-        title: "Icons",
-        link: "icons.html"
-    },
-    {
-        title: "Grid System",
-        link: "grid.html"
-    },
-    {
-        title: "Panels",
-        link: "panels.html"
-    },
-    {
-        type: "divider",
-    },
-    {
-        type: "header",
-        title: "Pages"
-    },
-    {
-        title: "Login",
-        link: "#"
-    },
-    {
-        title: "Signup",
-        link: "#"
-    },
-    {
-        title: "Blank Page",
-        link: "blank.html"
-    }
 ];
 %>
        <aside id="aside" class="app-aside">

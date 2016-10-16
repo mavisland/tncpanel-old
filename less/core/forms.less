@@ -1,3 +1,22 @@
 //
 // Forms
 // --------------------------------------------------
+
+label {
+    color: @form-label-color;
+}
+
+// Common form controls
+.form-control {
+    border-color: @input-border-color;
+    border-radius: @input-border-radius;
+
+    &,
+    &:focus {
+        .box-shadow(none);
+    }
+
+    &:focus {
+        border-color: @input-focus-border-color;
+    }
+}

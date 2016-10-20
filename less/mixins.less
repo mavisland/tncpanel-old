@@ -3,6 +3,7 @@
 // --------------------------------------------------
 
 // Utilities
+@import "mixins/typography";
 @import "mixins/vendor-prefixes";
 
 // Components
@@ -15,22 +16,22 @@
 // Paddings
 // -------------------------
 .pad-tb(@top: 10px; @bottom: @top;) {
-    padding-top: @top;
-    padding-bottom: @bottom;
+    padding-top: unit(@top, px);
+    padding-bottom: unit(@bottom, px);
 }
 .pad-lr(@left: 10px; @right: @left;) {
-    padding-left: @left;
-    padding-right: @right;
+    padding-left: unit(@left, px);
+    padding-right: unit(@right, px);
 }
 
 // Margins
 // -------------------------
 .mar-tb(@top: 10px; @bottom: @top;) {
-    margin-top: @top;
-    margin-bottom: @bottom;
+    margin-top: unit(@top, px);
+    margin-bottom: unit(@bottom, px);
 }
 .mar-lr(@left: 10px; @right: @left;) {
-    margin-left: @left;
-    margin-right: @right;
+    margin-left: unit(@left, px);
+    margin-right: unit(@right, px);
 }
 

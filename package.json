@@ -20,15 +20,10 @@
     "url": "git+https://github.com/mavisland/tncpanel.git"
   },
   "author": {
-    "username": "mavisland",
-    "fullname": "Tanju Yıldız",
-    "email": "ben@tanjuyildiz.com",
-    "homepage": "http://tanjuyildiz.com"
+    "name": "Tanju Yıldız",
+    "email": "ben@tanjuyildiz.com"
   },
-  "license": {
-    "type": "MIT License",
-    "url": "https://github.com/mavisland/tncpanel/blob/master/LICENSE"
-  },
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mavisland/tncpanel/issues"
   },

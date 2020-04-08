@@ -48,8 +48,12 @@
     "gulp-less": "^4.0.1",
 =======
     "gulp-header": "^2.0.9",
+<<<<<<< HEAD
     "gulp-less": "^3.1.0",
 >>>>>>> master
+=======
+    "gulp-less": "^4.0.1",
+>>>>>>> a4417cacf10e513ec4583e5aa0da83c2b8c59eec
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^2.0.0",
     "gulp-util": "^3.0.7"
